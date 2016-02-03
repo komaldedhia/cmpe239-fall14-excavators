@@ -1,0 +1,18 @@
+nohup java -jar dlmodel.jar 0<&- &> /tmp/239Gateway.log &
+
+ tail -90f /tmp/239Gateway.log
+ 
+ nohup python futuremovie.py 0<&- &> /tmp/239Python.log &
+ 
+ tail -90f /tmp/239Python.log
+ 
+  
+ V3 
+ bin2 = 5000000      # median_oneHalf
+bin3 = 20000000     # median_1x
+bin4 = 40000000     # median_2x
+bin5 = 80000000
+Range of each bin
+(181, 200000, 5000000, 20000000, 40000000, 80000000)
+Number of Box Office in each bin
+(277, 284, 178, 169, 165, 223, 0)
